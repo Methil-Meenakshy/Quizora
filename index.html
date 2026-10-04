@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quizora</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ANIME BACKGROUND -->
+
+    <div class="anime-background">
+
+        <div class="moon"></div>
+
+        <div class="mountain mountain-one"></div>
+        <div class="mountain mountain-two"></div>
+
+        <div class="stars"></div>
+
+        <div class="petal petal-one">✦</div>
+        <div class="petal petal-two">✦</div>
+        <div class="petal petal-three">✦</div>
+        <div class="petal petal-four">✦</div>
+        <div class="petal petal-five">✦</div>
+
+    </div>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="brand-badge">
+                ✦ QUIZORA
+            </div>
+
+            <h1 class="logo">
+                Quizora
+            </h1>
+
+            <p class="tagline">
+                More than a quiz.
+            </p>
+
+            <p class="description">
+                Challenge your knowledge, test your thinking,
+                and discover how much you really know.
+            </p>
+
+            <button class="primary-button"
+                    onclick="showCategories()">
+
+                Start Your Quiz
+
+                <span>→</span>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+
+    <section class="categories-section">
+
+        <div class="section-header">
+
+            <p class="eyebrow">
+                ✦ EXPLORE
+            </p>
+
+            <h2 id="categories"
+                class="section-title">
+
+                Choose Your Category
+
+            </h2>
+
+            <p class="section-description">
+
+                Pick a category and put your knowledge
+                to the test.
+
+            </p>
+
+        </div>
+
+
+        <div class="category-container">
+
+            <button class="category-card"
+                    onclick="startQuiz('Student Essentials')">
+
+                <span class="category-number">
+                    01
+                </span>
+
+                <span class="category-name">
+                    Student Essentials
+                </span>
+
+                <span class="category-arrow">
+                    →
+                </span>
+
+            </button>
+
+
+            <button class="category-card"
+                    onclick="startQuiz('World and Current Affairs')">
+
+                <span class="category-number">
+                    02
+                </span>
+
+                <span class="category-name">
+                    World and Current Affairs
+                </span>
+
+                <span class="category-arrow">
+                    →
+                </span>
+
+            </button>
+
+
+            <button class="category-card"
+                    onclick="startQuiz('Entertainment and Memory')">
+
+                <span class="category-number">
+                    03
+                </span>
+
+                <span class="category-name">
+                    Entertainment and Memory
+                </span>
+
+                <span class="category-arrow">
+                    →
+                </span>
+
+            </button>
+
+
+            <button class="category-card"
+                    onclick="startQuiz('Logic and Thinking')">
+
+                <span class="category-number">
+                    04
+                </span>
+
+                <span class="category-name">
+                    Logic and Thinking
+                </span>
+
+                <span class="category-arrow">
+                    →
+                </span>
+
+            </button>
+
+
+            <button class="category-card"
+                    onclick="startQuiz('Situations and Personality')">
+
+                <span class="category-number">
+                    05
+                </span>
+
+                <span class="category-name">
+                    Situations and Personality
+                </span>
+
+                <span class="category-arrow">
+                    →
+                </span>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUIZ -->
+
+    <section class="quiz-section">
+
+        <div id="quiz">
+
+            <div class="quiz-top">
+
+                <span class="quiz-label">
+                    ✦ QUIZ
+                </span>
+
+                <span class="question-counter">
+                    5 QUESTIONS
+                </span>
+
+            </div>
+
+
+            <div class="quiz-progress">
+
+                <div class="progress-bar"></div>
+
+            </div>
+
+
+            <h2 id="quiz-title">
+                Quiz
+            </h2>
+
+
+            <p id="question">
+                Question will appear here
+            </p>
+
+
+            <div class="options">
+
+                <button id="option1">
+                    Option 1
+                </button>
+
+                <button id="option2">
+                    Option 2
+                </button>
+
+                <button id="option3">
+                    Option 3
+                </button>
+
+                <button id="option4">
+                    Option 4
+                </button>
+
+            </div>
+
+
+            <button id="next">
+
+                Next
+
+                <span>→</span>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            ✦ Quizora · More than a quiz.
+        </p>
+
+    </footer>
+
+
+    <!-- KEEP YOUR EXISTING JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
